@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formas de Pagamento - Sun, Sea and Fragrance</title>
+  <style>
+    /* Estilos Básicos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #ffebee;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #e91e63;
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    /* Menu de Navegação */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d81b60;
+    }
+
+    /* Container Principal */
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Título */
+    .container h1 {
+      color: #e91e63;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    /* Opções de Pagamento */
+    .payment-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Cartão de Pagamento */
+    .payment-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .payment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Ícone de Pagamento */
+    .payment-icon {
+      font-size: 48px;
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    /* Nome e Descrição do Método de Pagamento */
+    .payment-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .payment-description {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Link de Voltar */
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #d81b60;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Sun, Sea and Fragrance</h1>
+  </header>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pagamento.html">Formas de Pagamento</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container">
+    <h1>Formas de Pagamento</h1>
+    <p>Escolha a opção de pagamento que preferir para sua conveniência.</p>
+
+    <div class="payment-options">
+      <!-- Cartão de Crédito -->
+      <div class="payment-card">
+        <div class="payment-icon">💳</div>
+        <div class="payment-name">Cartão de Crédito</div>
+        <div class="payment-description">
+          Pague com Visa, MasterCard ou American Express em até 12x sem juros.
+        </div>
+      </div>
+
+      <!-- Pix -->
+      <div class="payment-card">
+        <div class="payment-icon">⚡</div>
+        <div class="payment-name">Pix</div>
+        <div class="payment-description">
+          Pagamento instantâneo via Pix com desconto exclusivo.
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Voltar ao Site Principal</a>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Sun, Sea and Fragrance. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

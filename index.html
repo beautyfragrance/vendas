@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun, Sea and Fragrance</title>
+  <style>
+    /* Estilos Básicos */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #f3e9dc;
+      color: black;
+      padding: 20px;
+      text-align: center; /* Centraliza o texto do cabeçalho */
+      position: relative; /* Permite o posicionamento do logo */
+    }
+
+    .logo-esquerda {
+      position: absolute; /* Logo flutua à esquerda */
+      left: 20px; /* Espaço à esquerda */
+      top: 10px; /* Espaço acima */
+      width: 150px; /* Aumenta a largura do logotipo */
+      height: auto; /* Altura automática para manter proporções */
+    }
+
+    /* Menu de Navegação */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #e91e63;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fce4ec;
+      color: #d81b60; /* Cor do texto ao passar o mouse */
+    }
+
+    /* Conteúdo Principal */
+    .content {
+      padding: 20px;
+      text-align: center;
+      max-width: 800px; /* Aumenta a largura máxima */
+      margin: 0 auto;
+    }
+
+    /* Estilo do quadrado do produto */
+    .product-box {
+      border: 1px solid #e91e63; /* Borda do quadrado */
+      border-radius: 12px; /* Bordas arredondadas */
+      padding: 10px; /* Espaçamento interno */
+      margin: 20px auto; /* Margem reduzida para contornar melhor */
+      background-color: #fff; /* Cor de fundo */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+      max-width: 520px; /* Define uma largura máxima */
+      text-align: center; /* Centraliza o conteúdo dentro da caixa */
+      transition: transform 0.3s; /* Efeito de transformação */
+    }
+
+    .product-box:hover {
+      transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+    }
+
+    /* Estilo da descrição do produto */
+    .product-description {
+      max-width: 300px; /* Define uma largura máxima para a descrição */
+      margin: 10px auto; /* Centraliza a descrição dentro da caixa */
+      color: #666; /* Cor do texto da descrição */
+      font-size: 12px; /* Tamanho da fonte da descrição ajustado */
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 15px; /* Aumenta o espaço interno */
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 20px; /* Espaço acima do rodapé */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="medusa.PNG" alt="Logotipo Medusa" class="logo-esquerda">
+    <h1>Bem-vindo ao AC BEAUTY</h1>
+    <p>Explore nossos produtos.</p>
+  </header>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pagamento.html">Formas de Pagamento</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div class="content">
+    <h2>Conheça nossos produtos e serviços</h2>
+    <p>Estamos comprometidos em oferecer o melhor para você!</p>
+  </div>
+
+  <!-- Quadrado do Produto -->
+  <div class="product-box">
+    <a href="body.html">
+      <img src="produto.jpg" alt="Imagem do produto Body Splash Sun, Sea" style="width: 300px; height: auto; border-radius: 8px;"> <!-- Diminuindo a imagem do produto -->
+      <h1 style="color: #e91e63; margin: 10px 0;">R$65,00</h1>
+      <div class="product-description">
+        <h2 style="font-size: 12px;">Body Splash Sun, Sea é uma fragrância envolvente que evoca a nostalgia dos dias ensolarados na praia.</h2>
+      </div>
+    </a>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Sun, Sea and Fragrance. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

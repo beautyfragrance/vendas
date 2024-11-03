@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento via Pix - Sun, Sea and Fragrance</title>
+  <style>
+    /* Estilos Básicos */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Menu de Navegação */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d81b60;
+    }
+
+    /* Container Principal */
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Título */
+    h1 {
+      color: #e91e63;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo do QR Code */
+    .qr-code {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .qr-code img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .qr-code p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    /* Estilo do Formulário */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      font-size: 1em;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #d81b60;
+    }
+
+    /* Botão de Voltar */
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #d81b60;
+    }
+  </style>
+  <script>
+    function enviarParaWhatsApp(event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      
+      // Captura os valores dos campos do formulário
+      const nome = document.getElementById("nome").value;
+      const valor = document.getElementById("valor").value;
+      const data = document.getElementById("data").value;
+
+      // Número de WhatsApp (adicione o seu número com o código do país e DDD)
+      const telefone = "5592981354657"; // Substitua com seu número
+
+      // Mensagem personalizada
+      const mensagem = `Olá! Aqui estão os dados do pagamento via Pix:%0A%0A`
+                     + `Nome: ${nome}%0A`
+                     + `Valor Pago: ${valor}%0A`
+                     + `Data do Pagamento: ${data}%0A%0A`
+                     + `Obrigado!`;
+
+      // URL para enviar a mensagem no WhatsApp
+      const urlWhatsApp = `https://wa.me/${telefone}?text=${mensagem}`;
+
+      // Redireciona para o WhatsApp
+      window.open(urlWhatsApp, "_blank");
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pagamento.html">Formas de Pagamento</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container">
+    <h1>Pagamento via Pix</h1>
+    <p>Para realizar o pagamento via Pix, utilize o QR Code abaixo ou faça uma transferência para a chave informada.</p>
+
+    <!-- QR Code e Chave Pix -->
+    <div class="qr-code">
+      <img src="qr2.jpeg" alt="QR Code para pagamento via Pix">
+      <p><strong>Chave Pix:</strong> ac.beuatyfragrance@gmail.com</p>
+    </div>
+
+    <h2>Confirmação de Pagamento</h2>
+    <p>Após realizar o pagamento, preencha o formulário abaixo para que possamos confirmar sua compra:</p>
+
+    <!-- Formulário de Confirmação -->
+    <form onsubmit="enviarParaWhatsApp(event)">
+      <label for="nome">Seu Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="valor">Valor Pago:</label>
+      <input type="text" id="valor" name="valor" required>
+
+      <label for="data">Data do Pagamento:</label>
+      <input type="date" id="data" name="data" required>
+
+      <input type="submit" value="Enviar Confirmação">
+    </form>
+
+    <!-- Link de Voltar -->
+    <a href="index.html" class="back-link">← Voltar ao Site Principal</a>
+  </div>
+
+</body>
+</html>
